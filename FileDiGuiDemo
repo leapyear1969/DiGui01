@@ -1,0 +1,41 @@
+/*
+Public File(String pathname) 
+使用指定的路径pathname创建一个File对象。
+
+Public File(String parent,String child)
+使用指定的路径与字符串创建一个File对象。
+
+Public File(File parent,String child)
+使用一个File对象parent与字符串创建一个File对象。
+
+*/
+
+
+public class FileDiGuiDemo{
+  public static void main(String[] args){
+    //use method
+    
+  }
+  
+  public static void filePath(String pathname){
+    //create path
+    File srcFile = new File(String pathname); 
+    
+    //create file array
+    File[] fileArray = srcFile.listFile();
+    
+    //bianli filearray
+    for(File file : fileArray){
+      if(file.isFile()){
+        if(file.getName().endWith("java")){
+          syso(f.getAbsolutePath());
+        }else{
+          
+        }
+      }else{
+        String sonPath = f.getpath();
+        filePath(sonPath);
+      }
+    }
+  }
+}
