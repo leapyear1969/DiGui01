@@ -7,17 +7,17 @@
 
 public class DiGuiDemo1{
   public static void main(String[] args){
-    syso(20);
+    syso(f(20));
     
 
   }
   
       //create digui method
     public static int diGui(int n){
-      if(n == 1 || n ==2){
+      if(n == 1 || n == 2){
         return 1;
       }else {
-        return diGui(n)+digui(n-1);
+        return diGui(n-1)+digui(n-2);
       }
     }
 }
